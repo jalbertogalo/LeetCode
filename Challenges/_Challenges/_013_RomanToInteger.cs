@@ -23,6 +23,7 @@ namespace Challenges._Challenges {
         }
 
         public int RomanToInt(string romanNumber) {
+            //Dictionary<char, int> numbers = new Dictionary<char, int>() { { 'I', 1 }, { 'V', 5 }, { 'X', 10 }, { 'L', 50 }, { 'C', 100 }, { 'D', 500 }, { 'M', 1000 } };
             int romanToInt = RomanNumbers[romanNumber[romanNumber.Length - 1]];
             for (int i = romanNumber.Length - 1; i >= 1; i--) {
                 int currentPositionValue = RomanNumbers[romanNumber[i]];
